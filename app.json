@@ -1,0 +1,29 @@
+{
+  "name": "Paid WhatsApp Bot",
+  "description": "A Telegram bot for managing WhatsApp bot subscriptions",
+  "repository": "https://github.com/yourusername/paid-whatsapp-bot",
+  "logo": "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
+  "keywords": ["node", "telegram", "bot", "whatsapp", "payment"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "ADMIN_ID": {
+      "description": "Your Telegram User ID (for admin access)",
+      "value": "",
+      "required": true
+    },
+    "NODE_ENV": {
+      "description": "Environment (production/development)",
+      "value": "production",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
